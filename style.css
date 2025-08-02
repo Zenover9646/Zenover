@@ -1,0 +1,152 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', Arial, sans-serif;
+    background: linear-gradient(135deg, #f8e1ff 0%, #a1c4fd 100%);
+    min-height: 100vh;
+}
+
+header {
+    width: 100%;
+    text-align: center;
+    padding: 40px 0 10px 0;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 2.2em;
+    color: #a259e6;
+    font-weight: bold;
+    margin-bottom: 18px;
+    letter-spacing: 1px;
+}
+
+.logo i {
+    color: #a259e6;
+    font-size: 1.2em;
+}
+
+h1 {
+    color: #7b2ff2;
+    font-size: 1.5em;
+    margin-bottom: 12px;
+}
+
+p {
+    color: #5f2c82;
+    font-size: 1.08rem;
+    margin-bottom: 22px;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.ia-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+    justify-content: center;
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px 0 40px 0;
+}
+
+.ia-card {
+    background: linear-gradient(135deg, #fff 60%, #e0c3fc 100%);
+    border-radius: 16px;
+    padding: 12px 6px 10px 6px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #7b2ff2;
+    box-shadow: 0 4px 24px 0 rgba(162, 89, 230, 0.1);
+    border: 1.5px solid #e0c3fc;
+    min-width: 135px;
+    max-width: 145px;
+    flex: 1 1 135px;
+    transition: box-shadow 0.2s, transform 0.18s, background 0.2s;
+}
+
+.ia-card:hover {
+    box-shadow: 0 8px 32px 0 rgba(162, 89, 230, 0.18);
+    transform: translateY(-6px) scale(1.04);
+    background: linear-gradient(135deg, #f8e1ff 60%, #a1c4fd 100%);
+}
+
+.ia-logo {
+    width: 90px;
+    height: 90px;
+    object-fit: contain;
+    margin-bottom: 10px;
+    border-radius: 12px;
+    background: #fff;
+    box-shadow: 0 2px 8px #a1c4fd44;
+    border: 1px solid #e0c3fc;
+    padding: 2px;
+    transition: transform 0.18s;
+    display: block;
+}
+.ia-card:hover .ia-logo {
+    transform: scale(1.08) rotate(-4deg);
+}
+
+.ia-title {
+    font-size: 1.05em;
+    font-weight: 600;
+    margin-bottom: 10px;
+    letter-spacing: 0.5px;
+    color: #5f2c82;
+    text-align: center;
+}
+
+.ia-card a {
+    background: #a259e6;
+    color: #fff;
+    border-radius: 6px;
+    padding: 7px 12px;
+    text-decoration: none;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    font-size: 0.98em;
+    transition: background 0.2s, transform 0.2s;
+    margin-top: 8px;
+    box-shadow: 0 2px 8px rgba(162, 89, 230, 0.07);
+    align-self: center;
+}
+
+.ia-card a:hover {
+    background: #7b2ff2;
+    transform: scale(1.07);
+}
+
+@media (max-width: 900px) {
+    .ia-cards {
+        gap: 10px;
+        padding: 10px 0 30px 0;
+    }
+    .ia-card {
+        min-width: 110px;
+        max-width: 120px;
+        padding: 10px 2px 8px 2px;
+    }
+    .ia-logo {
+        width: 60px;
+        height: 60px;
+        margin-bottom: 7px;
+    }
+    h1 {
+        font-size: 1.1rem;
+    }
+    .logo {
+        font-size: 1.3em;
+    }
+}
